@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2023-12-30 13:28",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://wonderlandtime-login.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://wonderlandtime-login.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": true,
+    "usedWebp": true,
+    "favicon": false,
+    "mbrsiteDomain": "02boxy3gq2",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Wonderland Time™ | Home Official Site",
+        "meta_descr": "Wonderland Time is a decentralized exchange aggregator and liquidity protocol that enables users to find the most optimal token swap routes across various DEXs.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://wonderlandtime1.hpage.com\"><img src=\"@PROJECT_PATH@/assets/images/wonderland.png\" alt=\"Wonderland Time\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZUjSc2zRG",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://volta.club/\" class=\"text-primary\">Wonderland Time</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://wonderlandtime-login.github.io/\" class=\"text-primary\">Wonderland Time</a> DeFi: Unveiling the Temporal Treasures of a Novel Decentralized Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving landscape of decentralized finance (DeFi), new and innovative projects continuously emerge, each bringing a unique set of features and concepts to the table. Wonderland Time DeFi, a novel entrant into the decentralized financial ecosystem, has been gaining attention for its distinctive approach to yield generation, governance, and community engagement. In this article, we'll delve into the origins, key features, and potential impact of Wonderland Time DeFi, exploring the temporal treasures that set it apart in the dynamic world of decentralized finance.\n<br>\n<br>The Genesis of Wonderland Time DeFi\n<br>\n<br>Wonderland Time DeFi, often abbreviated as WTDF, made its debut in [year] with a vision to redefine the DeFi landscape through a temporal lens. Rooted in the principles of decentralization, sustainability, and community governance, Wonderland Time seeks to provide users with a unique and sustainable way to participate in yield farming while actively contributing to the project's development.\n<br>\n<br>Key Features of Wonderland Time DeFi\n<br>\n<br>Time-Weighted Yield Farming:\n<br>At the core of Wonderland Time DeFi is its innovative time-weighted yield farming mechanism. Unlike traditional yield farming models that may offer static or diminishing returns over time, Wonderland Time introduces a dynamic approach where the longer users stake their assets, the higher their yield becomes. This incentivizes long-term commitment and discourages short-term speculation, fostering a more sustainable and resilient DeFi ecosystem.\n<br>\n<br>Sustainable Tokenomics:\n<br>Wonderland Time places a strong emphasis on sustainable tokenomics. The project often features a deflationary token model, where a portion of transaction fees is burned, contributing to a decrease in the overall token supply over time. This deflationary mechanism aims to counter inflationary pressures, potentially leading to increased scarcity and value appreciation for WTDF tokens.\n<br>\n<br>Community Governance:\n<br>Decentralized governance is a fundamental aspect of Wonderland Time DeFi. Token holders are actively involved in decision-making processes, participating in proposals related to protocol upgrades, fee adjustments, and other critical aspects of the project. This democratic governance structure ensures that the community has a say in the evolution of Wonderland Time, promoting a sense of ownership and collective responsibility.\n<br>\n<br>Time Vaults and Temporal Staking:\n<br>Wonderland Time introduces the concept of \"Time Vaults\" where users can stake their tokens for predetermined periods. The longer the staking duration, the higher the potential yield. This feature aligns with the project's temporal theme, encouraging users to consider the temporal dimension in their staking decisions. Temporal staking adds an extra layer of complexity and strategy, creating an engaging experience for users.\n<br>\n<br>Incentivized Liquidity Provision:\n<br>To enhance liquidity across decentralized exchanges, Wonderland Time DeFi often introduces incentivized liquidity provision programs. Users can provide liquidity to supported trading pairs and earn additional rewards in WTDF tokens. These programs aim to deepen liquidity pools, improve price stability, and offer users an opportunity to earn rewards while contributing to the project's liquidity.\n<br>\n<br>Dynamic Emission Schedules:\n<br>The project's emission schedules are designed to adapt dynamically based on various factors, including community input, market conditions, and the overall health of the protocol. This flexibility allows Wonderland Time to respond to changing dynamics in the DeFi landscape, ensuring a balanced and sustainable issuance of WTDF tokens.\n<br>\n<br>Impact and Significance in the DeFi Landscape\n<br>\n<br>Innovative Yield Farming Model:\n<br>The time-weighted yield farming model introduced by Wonderland Time DeFi represents a departure from conventional approaches. By aligning incentives with long-term commitment, the project aims to create a more resilient and sustainable yield farming ecosystem. This innovation has the potential to influence future developments in the DeFi space, encouraging projects to explore creative ways of incentivizing long-term user participation.\n<br>\n<br>Community-Centric Governance:\n<br>The emphasis on community governance is a key aspect of Wonderland Time's significance. By giving users a direct voice in decision-making processes, the project fosters a strong and engaged community. This participatory governance model aligns with the decentralized ethos of the broader blockchain space, emphasizing inclusivity, transparency, and collective decision-making.\n<br>\n<br>Sustainability and Deflationary Mechanisms:\n<br>The focus on sustainability and deflationary tokenomics sets Wonderland Time apart as a project with a long-term vision. The burning of tokens through transaction fees contributes to potential scarcity, which, coupled with increasing demand, may positively impact the value of WTDF tokens over time. This approach reflects an awareness of economic principles and an effort to address potential inflation concerns.\n<br>\n<br>Temporal Staking as a Strategy:\n<br>The introduction of temporal staking and Time Vaults introduces a strategic element to user participation. Users must consider not only the potential returns but also the temporal dimension of their staking decisions. This added layer of complexity aligns with the project's theme and encourages users to adopt a more thoughtful and strategic approach to their participation in Wonderland Time.\n<br>\n<br>Liquidity Depth and Market Stability:\n<br>Incentivized liquidity provision programs contribute to the depth and stability of the WTDF market. Deeper liquidity pools on decentralized exchanges can mitigate slippage, making trading more attractive for users. This, in turn, enhances the overall market efficiency and contributes to a healthier and more vibrant DeFi ecosystem.\n<br>\n<br>Challenges and Considerations\n<br>\n<br>Educational Outreach:\n<br>The innovative features introduced by Wonderland Time DeFi may require users to understand and adapt to new concepts such as time-weighted yield farming and temporal staking. The project's success may hinge on effective educational outreach to ensure that users grasp the nuances of these features and can make informed decisions.\n<br>\n<br>Balancing Incentives:\n<br>Maintaining a delicate balance between incentivizing long-term commitment and providing attractive short-term rewards is a challenge for projects like Wonderland Time. Striking the right balance ensures that the protocol remains attractive to both new and existing users, fostering a dynamic and diverse community.\n<br>\n<br>Dynamic Emission Adjustments:\n<br>The dynamic adjustment of emission schedules introduces an element of uncertainty. While adaptability is a strength, it requires careful consideration and transparent communication to ensure that the community is aligned with any changes. Overcommunication and community involvement in decision-making can mitigate potential concerns.\n<br>\n<br>The Future of Wonderland Time DeFi\n<br>\n<br>As Wonderland Time DeFi charts its course into the future, several factors may shape its trajectory within the decentralized finance landscape:\n<br>\n<br>Evolution of Time-Weighted Models:\n<br>The success of Wonderland Time's time-weighted yield farming model may influence the evolution of similar models across the DeFi space. Projects may explore variations or improvements to time-weighted incentive structures, fostering innovation in yield farming approaches.\n<br>\n<br>Community-Driven Development:\n<br>The ongoing commitment to community governance positions Wonderland Time as a project driven by its user base. As the community grows, the project's development is likely to be shaped by a diverse range of perspectives and ideas. Continued efforts to empower the community will be crucial for sustained success.\n<br>\n<br>Expansion of Temporal Themes:\n<br>The temporal theme introduced by Wonderland Time may inspire other projects to explore temporal concepts in their design and functionality. This expansion of temporal themes could lead to a new wave of creative and thematic approaches within the DeFi landscape.\n<br>\n<br>Integration with Other DeFi Protocols:\n<br>Collaborations and integrations with other DeFi protocols could expand the utility of Wonderland Time DeFi. Strategic partnerships and interoperability initiatives may enhance the project's ecosystem, offering users a broader range of opportunities for yield generation and engagement.\n<br>\n<br>Enhancements in User Experience:\n<br>The user experience within the Wonderland Time ecosystem may see continuous improvements. Efforts to streamline interfaces, provide intuitive tools for temporal staking, and enhance educational resources can contribute to a positive and user-friendly environment.\n<br>\n<br>Conclusion\n<br>\n<br>Wonderland Time DeFi, with its innovative time-weighted yield farming model, community-centric governance, and focus on sustainability, stands as a distinctive player in the dynamic world of decentralized finance. As it continues to evolve, Wonderland Time has the potential to shape the future of yield farming and community participation within the broader blockchain ecosystem. Its temporal theme introduces a unique dimension to user engagement, encouraging participants to consider not only the present but also the temporal aspects of their DeFi strategies. In navigating the decentralized financial seas, Wonderland Time DeFi charts a course guided by principles of innovation, sustainability, and community empowerment, unveiling temporal treasures for those willing to explore the depths of its decentralized realm.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tZUjT1ocg6",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /cgi-bin
+Sitemap: https://wonderlandtime-login.github.io/sitemap.xml
